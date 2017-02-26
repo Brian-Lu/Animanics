@@ -1,16 +1,12 @@
+* { margin: 0; padding: 0; }
+   
 #canv {
-    border: 1px solid #83F52C;
-    
 }
 
-#full {
+html, body {
+    width: 100%;
+    height: 100%;
     background-color: black;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #83F52C; /*neon green*/
 }
 
 .b {
