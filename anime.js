@@ -5,7 +5,7 @@ var c_w = $(window).width();
 c.height = c_h;
 c.width = c_w; //fullscreen canv
 
-ctx.font = "3em Arial";
+ctx.font = "5.5em ArcadeClassic";
 var rid = 0;
 
 var b_circle = document.getElementById("b_circle");
@@ -57,23 +57,24 @@ var dvd = function(e) {
     var r = 200;    
     var x = Math.floor(Math.random() * (c_w - r));
     var y = Math.floor(Math.random() * (c_h - r/2));
-    var dx = 1.5;
-    var dy = 1.5;
+    var dx = 2.25;
+    var dy = 2.25;
+    var color = 'rgb(' + Math.floor(Math.random() * 256) + ',' +Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
     var drift = function() {
 	reset();
-	ctx.fillStyle = "#83F52C";
+	ctx.fillStyle = color;
 	ctx.fillRect(x, y, r, r/2);
-	
 	ctx.fillStyle = "#000000";
-	ctx.fillText("DVD", x+50, y+65);
-
+	ctx.fillText("DVD", x+30, y+75);
 	//boing
 	if (x < 0 || x > c_w-r){
 	    dx = -1 * dx;
+	    color = 'rgb(' + Math.floor(Math.random() * 256) + ',' +Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
 	}
 	//boing
 	if (y < 0 || y > c_h-(r/2)) {
 	    dy = -1 * dy;
+	    color = 'rgb(' + Math.floor(Math.random() * 256) + ',' +Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
 	}
 	x += dx;
 	y += dy;
