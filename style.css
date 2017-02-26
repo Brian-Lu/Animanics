@@ -1,0 +1,35 @@
+#canv {
+    border: 1px solid #83F52C;
+    
+}
+
+#full {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #83F52C; /*neon green*/
+}
+
+.b {
+    background-color: #83F52C;
+    color: black;
+    border: 1px solid #83F53C;
+    border-radius: 2px;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.b:hover {
+    background-color: green;
+    border: 1px solid green;
+}
+
+#b_wrap {
+    position: absolute;
+    right: 2em;
+    top: 1em;
+}
+
