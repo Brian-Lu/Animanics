@@ -40,8 +40,10 @@ var hypnosis = function(e) {
 		r -= 1;
 	    }
 	}
-	if (r == 0.15*c_w) {
+	if (r >= 0.15*c_w) {
 	    grow = false;
+	    console.log('grow = false');
+	    r -= 1;
 	}
 	if (r == 0) {
 	    grow = true;
